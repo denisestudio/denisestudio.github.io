@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700');
+
+body{
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962; 
+}
+.offset:before{
+  height: 3.8rem;
+  margin-top: -3.9rem;
+  content: "";
+  display: block;
+
+}
+
+/* --- Nav Bar style */
+.navbar{
+  text-transform: uppercase;
+  font-weight: 700; 
+  font-size: .9rem; 
+  letter-spacing: .1rem;
+  background-color: rgba(0, 0, 0, .4)!important; 
+}
+/* resolution du logo dela bar de navigation, grande resolution  */
+.navbar-brand{
+  height: 2rem; 
+}
+.navbar-nav li {
+  padding-right: .8rem;
+}
+.nav-dark .navbar-nav .nav-link {
+  color:white; 
+  padding-top: .8rem;
+}
+/*to target the color of the active link */
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color:#2f8bc0;
+}
+
+/* - Height for the slider -*/
+.carousel-item {
+height: 100vh;
+}
+/* Dimensions du carousel  */
+.carousel-caption {
+  position: absolute;
+  top: 30%;
+  text-transform: uppercase;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+/* titre du carousel  */
+.carousel-caption h1 {
+font-size: 4rem;
+font-weight: 700;
+letter-spacing: .3rem;
+text-shadow: .1rem .1rem .8rem black;
+padding-bottom: 1rem;
+}
+.carousel-caption h3{
+  font-size: 1.5rem;
+  text-shadow:.1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+.btn-lg{
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1.6rem;
+
+}
+
+.narrow {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.btn-md {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.1rem;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+.jumbotron {
+  border-radius: 0;
+  padding: 3rem 0 2rem; 
+  margin-bottom: 0;
+}
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 1.9rem;
+}
+.heading-underline {
+  width: 5rem;
+  height: .2rem;
+  background-color: #197c7c;
+  margin: 0 auto 2rem;
+}
+
+/* Portfolio -realisations */
+.portfolio img {
+  max-width: 100%;
+  transition: transform .4s ease; 
+}
+.row.no-padding [class*=col-]{
+  padding: 0;
+}
+.portfolio img:hover {
+  transition: scale(1.1);
+  cursor: zoom-in;
+}
+.portfolio{
+  overflow: hidden;
+}
+.card{
+  margin: 2rem;
+}
+/* -- Contact style CSS--*/
+footer {
+  background-color: #40474ed5;
+  color: white;
+  padding: 2rem 0 3rem;
+  margin-top: 1rem;
+}
+/* style du log dans le footer 
+footer img {
+  height: 3rem;
+  margin: 1.5rem 0 ;
+}
+*/
+.textecontact{
+  font-size: 1.5rem;
+}
+.citation{
+  font-size: 1.5rem;
+  font-style: italic;
+}
+footer a {
+  color: white;
+}
+footer svg.svg-inline--fa {
+font-size: 3.5rem;
+margin: 3rem .5rem 0 0; 
+}
+footer svg.svg-inline--fa:hover {
+  color: #2f8bc0; 
+}
+hr.socket {
+  border-top: .1rem solid #666b71;
+  width: 100%;
+}
+
+/* - Media queries - */
+@media (max-width: 767px) {
+  .carousel-caption h1 {
+     font-size: 2.3rem;
+     letter-spacing: .15rem;
+     padding-bottom: .5em;
+    }
+    .carousel-caption h3{
+      font-size: 1.2rem;
+      padding-bottom: 1.2rem;
+    }
+
+    .btn-lg{
+      font-size: 1rem;
+    }
+    .narrow h1 {
+      font-size: 1.5rem;
+    }
+    h2.lead {
+      font-size: 1rem;
+    }
+}
+h2.leadme{
+  color: #2f8bc0;
+  font-size: 1.6rem;
+}
+
+/*-- Début page de contact style*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid rgb(255, 255, 255); /* Gray border */
+  border-radius: 0px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 10px; /* Add a top margin */
+  margin-bottom: 20px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color:#2f8bc0;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #2f8bc0;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 0;
+  background-color: #dfdbdb;
+   } 
+  /* padding: 20px; 
+  dans une nouvelle classe pour le form
+      margin-top: 80px;
+    padding: 3%;
+} .div */
+.forma{
+  margin-top: 80px;
+  padding: 3%;
+}
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
