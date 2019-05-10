@@ -4,5 +4,5 @@ document.querySelector('button').addEventListener('click',(event) =>{
 })
 // Alerts the tracking ID for the default tracker.
 ga(function(tracker) {
-    alert(tracker.get('trackingId'));
+    alert(tracker.get('Welcome'));
 });
