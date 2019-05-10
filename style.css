@@ -176,6 +176,29 @@ hr.socket {
       font-size: 1rem;
     }
 }
+
+.button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color:green;
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; /* Green */
+}
+
 h2.leadme{
   color: #2f8bc0;
   font-size: 1.6rem;
